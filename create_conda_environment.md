@@ -29,3 +29,5 @@ conda install pytorch torchvision cpuonly -c pytorch -y
 
 # 4. Install lightly WITHOUT its dependencies (to prevent it from reinstalling a bad torch)
 pip install lightly --no-deps
+pip install urllib3
+pip install lightning_utilities
