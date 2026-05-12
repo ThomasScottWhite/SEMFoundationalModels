@@ -266,3 +266,6 @@ for epoch in range(epochs):
 
     avg_loss = total_loss / len(dataloader)
     print(f"epoch: {epoch:>02}, loss: {avg_loss:.5f}")
+
+print("Training Complete. Saving model...")
+torch.save(model.teacher_backbone.state_dict(), "dinov2_teacher_backbone.pth")
